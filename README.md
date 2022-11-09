@@ -8,3 +8,5 @@ Online freely available fundamental data (EBITA, sales, P/E etc.) are not availa
 
 ## Script
 Takes around 1.5 hours to run, and could possibly be improved by only getting the companies where new data has been released recently. The current code retreives a list of all the links present in the https://investor.dn.no/#!/Kurser/Aksjer/ overview in order to get the most updated list of stocks. It subsequently downloads the "Estimates" table for each stock where it is present (about half the companies), the latest technical indicators, the secton called "Tekniske nivåer" which is a summary of different types of technical analysis and lastly the shorting percentage (% of shorted stocks).
+
+The last section of the script uses this data, in combination with some price data from yahoo finance to calculate the PEG ratio for the available stocks.
